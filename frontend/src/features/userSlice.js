@@ -20,7 +20,7 @@ export const login = createAsyncThunk(
       }
 
       const { data } = await axios.post(
-        'http://localhost:5000/api/user/login',
+        'http://68.178.166.193/api/user/login',
         { email: obj.email, password: obj.password },
         config
       )
@@ -45,7 +45,7 @@ export const register = createAsyncThunk(
       }
 
       const { data } = await axios.post(
-        'http://localhost:5000/api/user/',
+        'http://68.178.166.193/api/user/',
         { email: obj.email, password: obj.password, name: obj.name },
         config
       )

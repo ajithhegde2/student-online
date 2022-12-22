@@ -5,7 +5,7 @@ const {
   updateStudent,
   deleteStudent,
 } = require('../controllers/studentController')
-const { protect } = require('../middleware/authMiddleware.js')
+const { protect } = require('../middleWare/authMiddleware.js')
 
 const router = express.Router()
 

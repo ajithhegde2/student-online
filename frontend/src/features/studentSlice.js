@@ -20,7 +20,7 @@ export const getAllStudents = createAsyncThunk(
       }
 
       const { data } = await axios.get(
-        'http://localhost:5000/api/student',
+        'http://68.178.166.193/api/student',
         config
       )
 
@@ -44,7 +44,7 @@ export const addStudent = createAsyncThunk(
       }
 
       const { data } = await axios.post(
-        'http://localhost:5000/api/student',
+        'http://68.178.166.193/api/student',
         { ...obj },
         config
       )
@@ -70,7 +70,7 @@ export const deleteStudent = createAsyncThunk(
       }
 
       const { data } = await axios.delete(
-        `http://localhost:5000/api/student/${obj}`,
+        `http://68.178.166.193/api/student/${obj}`,
 
         config
       )
@@ -99,7 +99,7 @@ export const updateStudent = createAsyncThunk(
       }
 
       const { data } = await axios.put(
-        `http://localhost:5000/api/student/${id}`,
+        `http://68.178.166.193/api/student/${id}`,
         { ...obj },
         config
       )
